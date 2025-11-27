@@ -905,7 +905,7 @@ const App = () => {
     setNavbarTransparent(false); // Force solid navbar on analysis
 
     try {
-      const ai = new GoogleGenAI({ apiKey: import.meta.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       
       const langNames = {
         uz: 'Uzbek',
@@ -1123,7 +1123,7 @@ const App = () => {
             <i className="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition-colors"></i>
             <i className="fa-brands fa-linkedin hover:text-blue-600 cursor-pointer transition-colors"></i>
           </div>
-          <p className="text-sm">© 2025 SmartSoil Project. AI500 HACKATHON</p>
+          <p className="text-sm">© 2025 SmartSoil Project. AI500 HACKATHON 2025</p>
         </div>
       </footer>
     </div>

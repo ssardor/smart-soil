@@ -1,6 +1,10 @@
-import type { Config } from 'tailwindcss'
-
+/** @type {import('tailwindcss').Config} */
 export default {
+  content: [
+    "./index.html",
+    "./index.tsx",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -18,6 +22,8 @@ export default {
           800: '#5D4037'
         }
       }
-    }
+    },
   },
-} satisfies Config
+  plugins: [],
+}
+
