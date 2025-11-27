@@ -905,7 +905,7 @@ const App = () => {
     setNavbarTransparent(false); // Force solid navbar on analysis
 
     try {
-      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.GEMINI_API_KEY });
       
       const langNames = {
         uz: 'Uzbek',
@@ -1023,7 +1023,7 @@ const App = () => {
              <div className="bg-gradient-to-r from-leaf-600 to-leaf-800 px-8 py-6">
                 <h3 className="text-2xl font-bold text-white flex items-center">
                   <i className="fa-solid fa-satellite-dish mr-3"></i>
-                  {analysisData ? t.startBtn : "Start New Analysis"}
+                  {analysisData ? t.startBtn : "Yangi tahlilni boshlash"}
                 </h3>
              </div>
              <form onSubmit={handleAnalyze} className="p-10 space-y-8">
@@ -1123,7 +1123,7 @@ const App = () => {
             <i className="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition-colors"></i>
             <i className="fa-brands fa-linkedin hover:text-blue-600 cursor-pointer transition-colors"></i>
           </div>
-          <p className="text-sm">© 2024 SmartSoil Project. All rights reserved.</p>
+          <p className="text-sm">© 2025 SmartSoil Project. AI500 HACKATHON</p>
         </div>
       </footer>
     </div>
